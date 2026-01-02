@@ -1,0 +1,473 @@
+{
+  "trip": {
+    "from_city": "Pune",
+    "to_city": "Shimla",
+    "duration_days": 4,
+    "aligns_with_itinerary": true
+  },
+  "outbound": {
+    "day_number": 1,
+    "recommended_option_id": "O1",
+    "options": [
+      {
+        "id": "O1",
+        "title": "Flight Pune to Chandigarh + Road to Shimla",
+        "summary": "Fastest and most reliable for a same-day Shimla arrival and evening stroll on Mall Road.",
+        "segments": [
+          {
+            "mode": "flight",
+            "from": "Pune (PNQ)",
+            "to": "Chandigarh (IXC)",
+            "typical_duration_range_hours": [3.5, 5.5],
+            "stops": "Nonstop rare; typically 1 stop via DEL/BOM",
+            "estimated_cost_inr": {
+              "min": 5500,
+              "max": 12000
+            },
+            "departure_time_suggestions_ist": [
+              "06:00-10:00"
+            ],
+            "arrival_time_expectation_ist": "11:00-14:00",
+            "notes": [
+              "Choose morning departures to reach Shimla by late afternoon.",
+              "Check layover times; 60-90 minutes is ideal."
+            ]
+          },
+          {
+            "mode": "road_taxi_private",
+            "from": "Chandigarh Airport (IXC)",
+            "to": "Shimla",
+            "route": "Himalayan Expressway → Solan → Shimla",
+            "distance_km": 115,
+            "typical_duration_range_hours": [3.5, 4.5],
+            "estimated_cost_inr": {
+              "sedan": {
+                "min": 3000,
+                "max": 4500
+              },
+              "suv": {
+                "min": 4500,
+                "max": 6500
+              }
+            },
+            "buffer_time_minutes": 20,
+            "notes": [
+              "Safer and quicker than shared options; ideal with luggage.",
+              "Avoid late-night hill driving in fog or rain."
+            ]
+          },
+          {
+            "mode": "road_bus_volvo_or_shared_taxi",
+            "from": "Chandigarh ISBT-43/17",
+            "to": "Shimla",
+            "typical_duration_range_hours": [4, 5.5],
+            "estimated_cost_inr": {
+              "volvo_bus": {
+                "min": 350,
+                "max": 700
+              },
+              "shared_taxi_per_seat": {
+                "min": 700,
+                "max": 1200
+              }
+            },
+            "notes": [
+              "Budget alternative to private taxi.",
+              "Slightly longer door-to-door due to transfers."
+            ],
+            "optional": true
+          }
+        ],
+        "total_time_door_to_door_hours": {
+          "min": 7,
+          "max": 10
+        },
+        "ideal_for": [
+          "Tight 4-day itinerary",
+          "Evening walk on The Ridge/Mall Road on Day 1"
+        ],
+        "risks": [
+          "Monsoon/winter weather can slow the hill drive."
+        ]
+      },
+      {
+        "id": "O2",
+        "title": "Flight Pune to Delhi + Train/Taxi to Shimla",
+        "summary": "Viable fallback if IXC fares spike; requires careful timing.",
+        "segments": [
+          {
+            "mode": "flight",
+            "from": "Pune (PNQ)",
+            "to": "Delhi (DEL)",
+            "typical_duration_range_hours": [2.1, 2.5],
+            "estimated_cost_inr": {
+              "min": 3500,
+              "max": 9000
+            },
+            "departure_time_suggestions_ist": [
+              "06:00-10:00"
+            ]
+          },
+          {
+            "mode": "train_shatabdi",
+            "from": "New Delhi (NDLS)",
+            "to": "Kalka (KLK)",
+            "typical_duration_hours": 4.5,
+            "estimated_cost_inr": {
+              "cc": 800,
+              "ec": 1500
+            },
+            "departure_time_suggestions_ist": [
+              "07:00-08:00"
+            ],
+            "notes": [
+              "Seats sell out; book early.",
+              "Transfer NDLS from DEL takes 45-90 minutes depending on traffic/metro."
+            ],
+            "optional": true
+          },
+          {
+            "mode": "toy_train_or_taxi",
+            "from": "Kalka (KLK)",
+            "to": "Shimla",
+            "typical_duration_range_hours": [2.5, 6.0],
+            "estimated_cost_inr": {
+              "toy_train": {
+                "min": 300,
+                "max": 600
+              },
+              "taxi_private": {
+                "min": 2500,
+                "max": 3500
+              }
+            },
+            "notes": [
+              "Heritage toy train is scenic but slow; may push arrival to late evening.",
+              "Taxi from KLK to Shimla is 2.5-3.5 hours if time-constrained."
+            ]
+          },
+          {
+            "mode": "road_bus_overnight_option",
+            "from": "Delhi (Kashmiri Gate ISBT)",
+            "to": "Shimla",
+            "typical_duration_range_hours": [8, 12],
+            "estimated_cost_inr": {
+              "volvo_sleeper": {
+                "min": 900,
+                "max": 1600
+              }
+            },
+            "notes": [
+              "Arrives early morning; misaligns with Day 1 evening plan.",
+              "Use only if flights/trains are unavailable."
+            ],
+            "optional": true
+          }
+        ],
+        "total_time_door_to_door_hours": {
+          "min": 9,
+          "max": 13
+        },
+        "ideal_for": [
+          "When Chandigarh flights are expensive or unavailable"
+        ],
+        "risks": [
+          "Multiple transfers; higher chance of delays.",
+          "Toy train seats limited; weather can affect timings."
+        ]
+      },
+      {
+        "id": "O3",
+        "title": "All-Train via Chandigarh/Kalka + Road",
+        "summary": "Budget-friendly but very long; not recommended for a 4-day trip.",
+        "segments": [
+          {
+            "mode": "train_long_distance",
+            "from": "Pune Jn (PUNE)",
+            "to": "Chandigarh (CDG) or Delhi (NDLS)",
+            "typical_duration_range_hours": [22, 28],
+            "estimated_cost_inr": {
+              "3AC": {
+                "min": 2200,
+                "max": 3500
+              },
+              "2AC": {
+                "min": 3500,
+                "max": 5200
+              }
+            }
+          },
+          {
+            "mode": "road_or_short_train",
+            "from": "CDG/NDLS/KLK",
+            "to": "Shimla",
+            "typical_duration_range_hours": [3, 8],
+            "estimated_cost_inr": {
+              "road_taxi": {
+                "min": 2500,
+                "max": 6500
+              },
+              "toy_train": {
+                "min": 300,
+                "max": 600
+              }
+            }
+          }
+        ],
+        "total_time_door_to_door_hours": {
+          "min": 30,
+          "max": 38
+        },
+        "ideal_for": [
+          "Max budget savings",
+          "Flexible schedules"
+        ],
+        "risks": [
+          "Consumes 2 days in transit; itinerary impact."
+        ]
+      },
+      {
+        "id": "O4",
+        "title": "Flight via Delhi to Shimla Airport (weather-permitting)",
+        "summary": "PNQ→DEL→SLV is the fastest if SLV operates; limited seats and weather disruptions common.",
+        "segments": [
+          {
+            "mode": "flight",
+            "from": "Pune (PNQ)",
+            "to": "Delhi (DEL)",
+            "typical_duration_range_hours": [2.1, 2.5],
+            "estimated_cost_inr": {
+              "min": 3500,
+              "max": 9000
+            }
+          },
+          {
+            "mode": "flight_turboprop",
+            "from": "Delhi (DEL)",
+            "to": "Shimla (SLV)",
+            "typical_duration_hours": 1.1,
+            "estimated_cost_inr": {
+              "min": 3500,
+              "max": 9000
+            },
+            "notes": [
+              "Limited frequencies; often morning/afternoon.",
+              "Weather diversions/cancellations are common; keep backup."
+            ]
+          },
+          {
+            "mode": "road_taxi_short",
+            "from": "Shimla (SLV)",
+            "to": "Shimla town",
+            "typical_duration_range_hours": [0.8, 1.2],
+            "estimated_cost_inr": {
+              "min": 800,
+              "max": 1500
+            }
+          }
+        ],
+        "total_time_door_to_door_hours": {
+          "min": 6,
+          "max": 8
+        },
+        "ideal_for": [
+          "If SLV flights align and weather is clear"
+        ],
+        "risks": [
+          "High cancellation risk; always hold a refundable backup."
+        ]
+      }
+    ]
+  },
+  "return": {
+    "day_number": 4,
+    "recommended_option_id": "R1",
+    "options": [
+      {
+        "id": "R1",
+        "title": "Road Shimla to Chandigarh + Flight to Pune",
+        "summary": "Mirrors the inbound plan; most reliable for a same-day return to Pune.",
+        "segments": [
+          {
+            "mode": "road_taxi_or_bus",
+            "from": "Shimla",
+            "to": "Chandigarh Airport (IXC)",
+            "typical_duration_range_hours": [3.5, 5],
+            "departure_time_suggestion_notes": [
+              "For an evening flight (18:00-21:00), leave Shimla by 11:00-12:00.",
+              "Add 60-90 minutes extra in monsoon/winter."
+            ],
+            "estimated_cost_inr": {
+              "taxi_sedan": {
+                "min": 3000,
+                "max": 4500
+              },
+              "volvo_bus": {
+                "min": 350,
+                "max": 700
+              }
+            }
+          },
+          {
+            "mode": "flight",
+            "from": "Chandigarh (IXC)",
+            "to": "Pune (PNQ)",
+            "typical_duration_range_hours": [3.5, 5.5],
+            "stops": "Typically 1 stop via DEL/BOM",
+            "estimated_cost_inr": {
+              "min": 5500,
+              "max": 12000
+            },
+            "check_in_buffer_minutes": 120
+          }
+        ],
+        "notes": [
+          "Keep at least 3 hours buffer between planned IXC arrival and flight departure.",
+          "If weather deteriorates, switch to an earlier taxi from Shimla."
+        ]
+      },
+      {
+        "id": "R2",
+        "title": "Taxi to Kalka/Chandigarh + Train/Flight via Delhi",
+        "summary": "Use if IXC→PNQ fares spike or seats are unavailable.",
+        "segments": [
+          {
+            "mode": "road_taxi",
+            "from": "Shimla",
+            "to": "Kalka (KLK) / Chandigarh (CDG)",
+            "typical_duration_range_hours": [2.5, 4.5],
+            "estimated_cost_inr": {
+              "min": 2500,
+              "max": 4500
+            }
+          },
+          {
+            "mode": "train_shatabdi",
+            "from": "Kalka (KLK)",
+            "to": "New Delhi (NDLS)",
+            "typical_duration_hours": 4.5,
+            "estimated_cost_inr": {
+              "cc": 800,
+              "ec": 1500
+            },
+            "optional": true
+          },
+          {
+            "mode": "flight",
+            "from": "Delhi (DEL)",
+            "to": "Pune (PNQ)",
+            "typical_duration_range_hours": [2.1, 2.5],
+            "estimated_cost_inr": {
+              "min": 3500,
+              "max": 9000
+            }
+          }
+        ],
+        "notes": [
+          "More transfers; plan tight connections carefully.",
+          "Consider overnight Delhi stay if connections are late."
+        ]
+      },
+      {
+        "id": "R3",
+        "title": "Shimla to Delhi Overnight Bus + Morning Flight to Pune",
+        "summary": "Budget fallback; shifts most travel to night.",
+        "segments": [
+          {
+            "mode": "road_bus_overnight",
+            "from": "Shimla",
+            "to": "Delhi (Kashmiri Gate ISBT)",
+            "typical_duration_range_hours": [8, 12],
+            "estimated_cost_inr": {
+              "min": 900,
+              "max": 1600
+            }
+          },
+          {
+            "mode": "local_transfer",
+            "from": "ISBT",
+            "to": "Delhi (DEL) Airport",
+            "typical_duration_range_hours": [1, 1.5],
+            "estimated_cost_inr": {
+              "min": 200,
+              "max": 800
+            }
+          },
+          {
+            "mode": "flight",
+            "from": "Delhi (DEL)",
+            "to": "Pune (PNQ)",
+            "typical_duration_range_hours": [2.1, 2.5],
+            "estimated_cost_inr": {
+              "min": 3500,
+              "max": 9000
+            }
+          }
+        ],
+        "notes": [
+          "Arrives PNQ by late morning/afternoon.",
+          "Use only if IXC options are sold out."
+        ]
+      }
+    ]
+  },
+  "timing_alignment": {
+    "day1_target": "Reach Shimla hotel by 16:00-18:00 for The Ridge & Mall Road in the evening.",
+    "day4_target": "Leave Shimla late morning; catch an evening flight from IXC to reach PNQ same night."
+  },
+  "cost_estimates_inr_per_person": {
+    "outbound": {
+      "O1": {
+        "min": 9000,
+        "max": 16500
+      },
+      "O2": {
+        "min": 7800,
+        "max": 19100
+      },
+      "O3": {
+        "min": 2800,
+        "max": 10100
+      },
+      "O4": {
+        "min": 7800,
+        "max": 19500
+      }
+    },
+    "return": {
+      "R1": {
+        "min": 9000,
+        "max": 16500
+      },
+      "R2": {
+        "min": 6800,
+        "max": 16000
+      },
+      "R3": {
+        "min": 4600,
+        "max": 11600
+      }
+    },
+    "notes": [
+      "Taxi costs can be split among travelers; per-person costs above assume solo traveler using private taxi where applicable.",
+      "Festival/peak season can raise airfares by 20-40%."
+    ]
+  },
+  "baggage_and_seasonal_notes": [
+    "Winter (Nov–Mar): Add 30-60 minutes to road legs; carry warm layers and check for snowfall advisories near Kufri.",
+    "Monsoon (Jul–Sep): Occasional landslides can slow traffic on NH-5; start earlier.",
+    "Keep prescriptions and essentials in cabin bag in case of road delays."
+  ],
+  "booking_tips": [
+    "Prefer morning PNQ departures for same-day Shimla arrival.",
+    "Hold refundable tickets or backup routes during winter/monsoon.",
+    "Pre-book taxi from IXC to get fixed fares and reduce wait time.",
+    "If taking toy train, book window seats early; carry snacks and water.",
+    "Aim for at least 3 hours between IXC arrival and flight if transiting same day on return."
+  ],
+  "local_transit_in_shimla": [
+    "Mall Road and The Ridge are pedestrian-only; expect walking.",
+    "Use local taxis for Jakhoo, IIAS, and State Museum; negotiate upfront or use metered services.",
+    "Jakhoo Ropeway is the easiest ascent; check last return ride timings."
+  ]
+}

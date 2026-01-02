@@ -1,0 +1,260 @@
+{
+  "home_city": "Pune",
+  "destination_city": "Shimla",
+  "num_days": 4,
+  "days": [
+    {
+      "day": 1,
+      "summary": "Travel from Pune to Shimla, followed by an evening exploration of Shimla's iconic Mall Road and The Ridge.",
+      "entities": [
+        {
+          "name": "Travel to Shimla",
+          "speciality": "The journey from the plains to the hills offers a scenic transition, culminating in the refreshing mountain air of Shimla.",
+          "places_to_visit": [
+            {
+              "name": "Chandigarh Airport (IXC)",
+              "description": "Arrival point for flights, connecting to road transport for Shimla."
+            },
+            {
+              "name": "Kalka-Shimla Highway",
+              "description": "The picturesque road journey through tunnels and pine forests, offering glimpses of the Shivalik range."
+            },
+            {
+              "name": "Hotel Check-in",
+              "description": "Settle into your accommodation in Shimla, preparing for the evening's exploration."
+            }
+          ],
+          "photo_prompts": [
+            "Scenic view of the winding mountain road leading to Shimla, with pine trees and distant hills under a clear sky.",
+            "A cozy hotel room in Shimla with a window view of the surrounding hills, bathed in soft evening light."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/travel-to-shimla_0_1.png",
+            "/static/itineraries/shimla/travel-to-shimla_1_1.png"
+          ]
+        },
+        {
+          "name": "The Ridge & Mall Road",
+          "speciality": "The heart of Shimla, bustling with activity, colonial architecture, shops, and eateries, offering a vibrant evening experience.",
+          "places_to_visit": [
+            {
+              "name": "The Ridge",
+              "description": "A large open space in the center of Shimla, offering panoramic views of the surrounding mountain ranges and a hub for local events."
+            },
+            {
+              "name": "Mall Road",
+              "description": "Shimla's main street, lined with shops, restaurants, cafes, and colonial buildings, perfect for an evening stroll and souvenir shopping."
+            },
+            {
+              "name": "Scandal Point",
+              "description": "A popular meeting point on Mall Road, offering views of the valley and a local legend associated with it."
+            },
+            {
+              "name": "Local Eateries",
+              "description": "Enjoy local Himachali cuisine or popular Indian dishes at one of the many restaurants along Mall Road."
+            }
+          ],
+          "photo_prompts": [
+            "Evening view of The Ridge in Shimla, illuminated colonial buildings, with distant mountain silhouettes and a few pedestrians.",
+            "A vibrant scene on Mall Road at dusk, with shops lit up, people strolling, and the classic architecture of Shimla visible."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/the-ridge-&-mall-road_0_1.png",
+            "/static/itineraries/shimla/the-ridge-&-mall-road_1_1.png"
+          ]
+        }
+      ],
+      "route_info": "Fly from Pune (PNQ) to Chandigarh (IXC). From Chandigarh, take a pre-booked taxi or a comfortable bus to Shimla (approx. 3-4 hours drive)."
+    },
+    {
+      "day": 2,
+      "summary": "An adventurous day trip to Kufri for snow activities, followed by exploring historical landmarks on Shimla's Ridge.",
+      "entities": [
+        {
+          "name": "Kufri",
+          "speciality": "A small hill station known for its adventure activities, especially in winter when it transforms into a snowy wonderland.",
+          "places_to_visit": [
+            {
+              "name": "Mahasu Peak",
+              "description": "Accessible by pony or trek, offering stunning views and the opportunity for snow activities like skiing (seasonal)."
+            },
+            {
+              "name": "Himalayan Nature Park",
+              "description": "Home to various Himalayan fauna, including snow leopards, brown bears, and monal pheasants, set amidst natural surroundings."
+            },
+            {
+              "name": "Adventure Activities",
+              "description": "Engage in activities like yak rides, sledding, or photography with traditional Himachali attire (seasonal and weather-dependent)."
+            },
+            {
+              "name": "Kufri Fun World",
+              "description": "An amusement park offering go-karting and other rides, providing entertainment for all ages."
+            }
+          ],
+          "photo_prompts": [
+            "Snow-covered landscape in Kufri with pine trees dusted with fresh snow, and a few people enjoying winter activities.",
+            "A panoramic view from Mahasu Peak, showcasing the snow-capped Himalayan ranges under a bright winter sky."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/kufri_0_1.png",
+            "/static/itineraries/shimla/kufri_1_1.png"
+          ]
+        },
+        {
+          "name": "Christ Church & Gaiety Theatre",
+          "speciality": "Iconic colonial structures on The Ridge, representing Shimla's rich British heritage and architectural grandeur.",
+          "places_to_visit": [
+            {
+              "name": "Christ Church, Shimla",
+              "description": "The second oldest church in North India, known for its stained-glass windows and neo-Gothic architecture."
+            },
+            {
+              "name": "Gaiety Heritage Cultural Complex",
+              "description": "A historic theatre and cultural center, once a hub for British theatrical performances, now hosting various cultural events."
+            },
+            {
+              "name": "Shimla Public Library",
+              "description": "Located near The Ridge, a historic building offering a quiet retreat and a glimpse into Shimla's intellectual past."
+            }
+          ],
+          "photo_prompts": [
+            "The majestic Christ Church in Shimla, its yellow facade and Gothic architecture standing out against a clear blue sky.",
+            "The ornate Victorian-era exterior of the Gaiety Theatre, showcasing its historical charm on The Ridge."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/christ-church-&-gaiety-theatre_0_1.png",
+            "/static/itineraries/shimla/christ-church-&-gaiety-theatre_1_0.png"
+          ]
+        }
+      ],
+      "route_info": "Take a local taxi or bus from Shimla to Kufri (approx. 15 km, 45 minutes drive). Return to Shimla by the same means."
+    },
+    {
+      "day": 3,
+      "summary": "A spiritual and scenic journey to Jakhoo Hill, followed by an exploration of Shimla's colonial administrative history.",
+      "entities": [
+        {
+          "name": "Jakhoo Hill",
+          "speciality": "The highest peak in Shimla, offering breathtaking panoramic views and home to an ancient Hanuman temple.",
+          "places_to_visit": [
+            {
+              "name": "Jakhoo Temple",
+              "description": "Dedicated to Lord Hanuman, featuring a colossal 108-foot tall statue visible from various parts of Shimla."
+            },
+            {
+              "name": "Jakhoo Ropeway",
+              "description": "An aerial tramway offering a scenic and convenient way to reach the temple, providing stunning views of the city and mountains."
+            },
+            {
+              "name": "Panoramic Viewpoints",
+              "description": "Enjoy sweeping vistas of the Shivalik mountain range, the town of Shimla, and the surrounding valleys."
+            }
+          ],
+          "photo_prompts": [
+            "The colossal Hanuman statue at Jakhoo Temple, overlooking the Shimla valley, with misty mountains in the background.",
+            "A view from the Jakhoo Ropeway cabin, showing the dense pine forests and the sprawling Shimla town below."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/jakhoo-hill_0_1.png",
+            "/static/itineraries/shimla/jakhoo-hill_1_1.png"
+          ]
+        },
+        {
+          "name": "Indian Institute of Advanced Study & State Museum",
+          "speciality": "Explore the intellectual and historical legacy of Shimla through its grand colonial architecture and preserved artifacts.",
+          "places_to_visit": [
+            {
+              "name": "Indian Institute of Advanced Study",
+              "description": "Housed in the former Viceregal Lodge, this magnificent building served as the summer retreat for the British Viceroys of India. Explore its grand architecture and gardens."
+            },
+            {
+              "name": "Himachal State Museum",
+              "description": "Showcases the cultural heritage of Himachal Pradesh through a collection of ancient sculptures, paintings, coins, and handicrafts."
+            },
+            {
+              "name": "Annandale",
+              "description": "A picturesque flat terrain used as a playground and for polo during the British era, now a helipad and a small golf course."
+            }
+          ],
+          "photo_prompts": [
+            "The grand Victorian-era architecture of the Indian Institute of Advanced Study, surrounded by lush green lawns under a clear sky.",
+            "The elegant facade of the Himachal State Museum, reflecting its historical significance amidst well-maintained gardens."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/indian-institute-of-advanced-study-&-state-museum_0_1.png",
+            "/static/itineraries/shimla/indian-institute-of-advanced-study-&-state-museum_1_0.png"
+          ]
+        }
+      ],
+      "route_info": "Take the Jakhoo Ropeway or trek to Jakhoo Hill. Use local taxis for the Indian Institute of Advanced Study and State Museum."
+    },
+    {
+      "day": 4,
+      "summary": "Enjoy a leisurely morning in Shimla for last-minute shopping or relaxation, followed by departure back to Pune.",
+      "entities": [
+        {
+          "name": "Mall Road (Leisure & Shopping)",
+          "speciality": "A final opportunity to soak in the atmosphere of Shimla's main street, pick up souvenirs, or enjoy a last cup of coffee.",
+          "places_to_visit": [
+            {
+              "name": "Souvenir Shopping",
+              "description": "Browse for local handicrafts, woolen items, Himachali caps, and wooden artifacts to take home."
+            },
+            {
+              "name": "Cafe Hopping",
+              "description": "Enjoy a relaxed breakfast or coffee at one of the many charming cafes along Mall Road."
+            },
+            {
+              "name": "Morning Stroll",
+              "description": "Take a final walk along Mall Road and The Ridge, enjoying the crisp morning air and mountain views."
+            }
+          ],
+          "photo_prompts": [
+            "A serene morning view of Mall Road, with a few early risers and shops slowly opening, bathed in soft sunlight.",
+            "A close-up of colorful Himachali handicrafts and woolen shawls displayed in a shop on Mall Road."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/mall-road-(leisure-&-shopping)_0_1.png",
+            "/static/itineraries/shimla/mall-road-(leisure-&-shopping)_1_1.png"
+          ]
+        },
+        {
+          "name": "Travel from Shimla",
+          "speciality": "The journey back, carrying memories of Shimla's scenic beauty, adventure, and colonial charm.",
+          "places_to_visit": [
+            {
+              "name": "Shimla Bus Stand/Taxi Stand",
+              "description": "Departure point for your journey back to Chandigarh."
+            },
+            {
+              "name": "Chandigarh Airport (IXC)",
+              "description": "Connecting point for your flight back to Pune."
+            },
+            {
+              "name": "Pune Airport (PNQ)",
+              "description": "Arrival back in your home city."
+            }
+          ],
+          "photo_prompts": [
+            "A long shot of the winding road descending from Shimla, with the distant plains visible under a hazy sky.",
+            "An airplane wing against a backdrop of clouds, symbolizing the journey back home."
+          ],
+          "image_urls": [
+            "/static/itineraries/shimla/travel-from-shimla_0_0.png",
+            "/static/itineraries/shimla/travel-from-shimla_1_1.png"
+          ]
+        }
+      ],
+      "route_info": "Take a pre-booked taxi or bus from Shimla to Chandigarh Airport (IXC), then fly from Chandigarh (IXC) to Pune (PNQ)."
+    }
+  ],
+  "overall_tips": [
+    "Pack warm clothing, especially if traveling in winter (November to March), as temperatures can drop significantly, and snow is common.",
+    "Wear comfortable walking shoes as Shimla involves a lot of walking, especially on Mall Road and The Ridge.",
+    "Stay hydrated and carry basic medications for altitude sickness, although Shimla's altitude is moderate.",
+    "Bargain politely when shopping in local markets, especially for souvenirs.",
+    "Try local Himachali dishes like Siddu, Chha Gosht, and Babru for an authentic culinary experience.",
+    "Book taxis or buses in advance for inter-city travel, especially during peak seasons, to ensure availability and better rates.",
+    "Respect local customs and traditions, especially when visiting temples and religious sites."
+  ]
+}

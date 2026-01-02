@@ -1,0 +1,184 @@
+{
+  "hight": {
+    "1": {
+      "stays": [
+        {
+          "name": "The Oberoi Cecil, Shimla \"oberoihotels",
+          "imageUrl": "/shimla/accommodation/the_oberoi_cecil_shimla.jpg"
+        },
+        {
+          "name": "Radisson Hotel Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/radisson_hotel_shimla.jpeg"
+        }
+      ]
+    },
+    "2": {
+      "stays": [
+        {
+          "name": "The Oberoi Cecil, Shimla \"oberoihotels",
+          "imageUrl": "/shimla/accommodation/the_oberoi_cecil_shimla.jpg"
+        },
+        {
+          "name": "Radisson Hotel Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/radisson_hotel_shimla.jpeg"
+        }
+      ]
+    },
+    "3": {
+      "stays": [
+        {
+          "name": "The Oberoi Cecil, Shimla \"oberoihotels",
+          "imageUrl": "/shimla/accommodation/the_oberoi_cecil_shimla.jpg"
+        },
+        {
+          "name": "Radisson Hotel Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/radisson_hotel_shimla.jpeg"
+        }
+      ]
+    },
+    "4": {
+      "stays": [
+        {
+          "name": "The Oberoi Cecil, Shimla \"oberoihotels",
+          "imageUrl": "/shimla/accommodation/the_oberoi_cecil_shimla.jpg"
+        },
+        {
+          "name": "Radisson Hotel Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/radisson_hotel_shimla.jpge"
+        }
+      ]
+    }
+  },
+  "medium": {
+    "1": {
+      "stays": [
+        {
+          "name": "Hotel Willow Banks, Mall Road \"willowbanks",
+          "imageUrl": "/shimla/accommodation/hotel_willow_banks_mall_road.jpeg"
+        },
+        {
+          "name": "Honeymoon Inn Shimla \"honeymooninnshimla",
+          "imageUrl": "/shimla/accommodation/honeymoon_inn_shimla.jpeg"
+        },
+        {
+          "name": "Hotel Combermere \"booking",
+          "imageUrl": "/shimla/accommodation/hotel_combermere.jpeg"
+        }
+      ]
+    },
+    "2": {
+      "stays": [
+        {
+          "name": "Hotel Willow Banks, Mall Road \"willowbanks",
+          "imageUrl": "/shimla/accommodation/hotel_willow_banks_mall_road.jpeg"
+        },
+        {
+          "name": "Honeymoon Inn Shimla \"honeymooninnshimla",
+          "imageUrl": "/shimla/accommodation/honeymoon_inn_shimla.jpeg"
+        },
+        {
+          "name": "Hotel Combermere \"booking",
+          "imageUrl": "/shimla/accommodation/hotel_combermere.jpeg"
+        }
+      ]
+    },
+    "3": {
+      "stays": [
+        {
+          "name": "Hotel Willow Banks, Mall Road \"willowbanks",
+          "imageUrl": "/shimla/accommodation/hotel_willow_banks_mall_road.jpeg"
+        },
+        {
+          "name": "Honeymoon Inn Shimla \"honeymooninnshimla",
+          "imageUrl": "/shimla/accommodation/honeymoon_inn_shimla.jpeg"
+        },
+        {
+          "name": "Hotel Combermere \"booking",
+          "imageUrl": "/shimla/accommodation/hotel_combermere.jpeg"
+        }
+      ]
+    },
+    "4": {
+      "stays": [
+        {
+          "name": "Hotel Willow Banks, Mall Road \"willowbanks",
+          "imageUrl": "/shimla/accommodation/hotel_willow_banks_mall_road.jpeg"
+        },
+        {
+          "name": "Honeymoon Inn Shimla \"honeymooninnshimla",
+          "imageUrl": "/shimla/accommodation/honeymoon_inn_shimla.jpeg"
+        },
+        {
+          "name": "Hotel Combermere \"booking",
+          "imageUrl": "/shimla/accommodation/hotel_combermere.jpeg"
+        }
+      ]
+    }
+  },
+  "low": {
+    "1": {
+      "stays": [
+        {
+          "name": "Zostel Homes Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/zostel_homes_shimla.jpeg"
+        },
+        {
+          "name": "The Hosteller Shimla \"thehosteller",
+          "imageUrl": "/shimla/accommodation/the_hosteller_shimla.jpeg"
+        },
+        {
+          "name": "YMCA Shimla Tourist Hostel \"tripadvisor",
+          "imageUrl": "/shimla/accommodation/ymca_shimla_tourist_hostel.jpeg"
+        }
+      ]
+    },
+    "2": {
+      "stays": [
+        {
+          "name": "Zostel Homes Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/zostel_homes_shimla.jpeg"
+        },
+        {
+          "name": "The Hosteller Shimla \"thehosteller",
+          "imageUrl": "/shimla/accommodation/the_hosteller_shimla.jpeg"
+        },
+        {
+          "name": "YMCA Shimla Tourist Hostel \"tripadvisor",
+          "imageUrl": "/shimla/accommodation/ymca_shimla_tourist_hostel.jpeg"
+        }
+      ]
+    },
+    "3": {
+      "stays": [
+        {
+          "name": "Zostel Homes Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/zostel_homes_shimla.jpeg"
+        },
+        {
+          "name": "The Hosteller Shimla \"thehosteller",
+          "imageUrl": "/shimla/accommodation/the_hosteller_shimla.jpeg"
+        },
+        {
+          "name": "YMCA Shimla Tourist Hostel \"tripadvisor",
+          "imageUrl": "/shimla/accommodation/ymca_shimla_tourist_hostel.jpeg"
+        }
+      ]
+    },
+    "4": {
+      "stays": [
+        {
+          "name": "Zostel Homes Shimla \"booking",
+          "imageUrl": "/shimla/accommodation/zostel_homes_shimla.jpeg"
+        },
+        {
+          "name": "The Hosteller Shimla \"thehosteller",
+          "imageUrl": "/shimla/accommodation/the_hosteller_shimla.jpeg"
+        },
+        {
+          "name": "YMCA Shimla Tourist Hostel \"tripadvisor",
+          "imageUrl": "/shimla/accommodation/ymca_shimla_tourist_hostel.jpeg"
+        }
+      ]
+    }
+  }
+}
