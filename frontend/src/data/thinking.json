@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Analyzing Request",
+        "description": "Identifying your destination, travel dates, and interests. Checking for availability and local weather conditions during your planned dates."
+    },
+    {
+        "title": "Route Planning",
+        "description": "Evaluating flight, train, and road options to find the most efficient connection from your origin. balancing travel time against cost and comfort."
+    },
+    {
+        "title": "Accommodation Search",
+        "description": "Scanning for highly-rated hotels and stays that match your preference profile. Looking for central locations with good amenities and safety ratings."
+    },
+    {
+        "title": "Itinerary Construction",
+        "description": "Drafting a day-by-day schedule. Selecting key attractions, allocating time for sightseeing, and identifying logical routes to minimize travel time between spots."
+    },
+    {
+        "title": "Curating Experiences",
+        "description": "Adding local food recommendations, cultural experiences, and hidden gems. refining the plan to ensure a relaxed yet engaging pace."
+    },
+    {
+        "title": "Final Review",
+        "description": "Verifying opening hours, checking logistics, and formatting the final travel plan with maps and tips."
+    }
+]

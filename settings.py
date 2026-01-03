@@ -6,7 +6,7 @@ Configuration file for AI models and settings
 MODELS = {
     "gemini": {
         "text": "gemini-2.5-flash",
-        "image": "gemini-2.5-flash-image-preview",  # For image generation
+        "image": "gemini-2.5-flash-image",  # For image generation
     },
     "perplexity": {
         "text": "sonar",
@@ -42,7 +42,7 @@ PERPLEXITY_SETTINGS = {
 
 # Image Generation Settings
 IMAGE_GENERATION = {
-    "max_images_per_entity": 2,
+    "max_images_per_entity": 1,
     "image_quality": "standard",
     "image_size": "1024x1024",
 }

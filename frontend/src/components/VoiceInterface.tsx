@@ -38,9 +38,6 @@ export default function VoiceInterface({ onTriggerApiModal }: AudioChatInterface
   // Remove audio context initialization - only recording animation now
 
   const startRecording = async () => {
-    // Trigger API modal when user tries to start recording
-    onTriggerApiModal()
-
     // Comment out the actual recording functionality since we want to trigger the modal
     /*
     try {

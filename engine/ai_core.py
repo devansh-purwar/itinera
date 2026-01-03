@@ -3,6 +3,10 @@ import json
 import time
 import asyncio
 from typing import Any, List, Optional
+from dotenv import load_dotenv
+
+# Load environment variables before accessing them
+load_dotenv()
 
 from google import genai
 from google.genai import types
@@ -151,7 +155,10 @@ async def async_generate_image_files(
                                 f.write(data_buffer)
                             file_path_result = file_path
                             break  # Take only the first image
-        except Exception:
+                else:
+                    print(f"SERVER_LOG: No candidate/content in response for {file_name_prefix}")
+        except Exception as e:
+            print(f"SERVER_LOG: Image generation failed for {file_name_prefix}. Error: {e}")
             return None
         return file_path_result
 

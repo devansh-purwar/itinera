@@ -1,11 +1,11 @@
 "use client"
 
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import {
-    APIProvider,
-    Map,
-    useMapsLibrary,
-    useMap   
+  APIProvider,
+  Map,
+  useMapsLibrary,
+  useMap
 } from '@vis.gl/react-google-maps';
 
 interface GoogleMapsProps {
@@ -44,11 +44,11 @@ const Directions = ({ startPoint, endPoint, travelMode, onTravelModeChange }: Di
   // Initialize the directions service and renderer
   useEffect(() => {
     if (!routesLibrary || !map) return;
-    
+
     setDirectionsService(new routesLibrary.DirectionsService());
-    
+
     // Create a new renderer instance
-    const renderer = new routesLibrary.DirectionsRenderer({ 
+    const renderer = new routesLibrary.DirectionsRenderer({
       map,
       suppressMarkers: false,
       draggable: false,
@@ -66,21 +66,21 @@ const Directions = ({ startPoint, endPoint, travelMode, onTravelModeChange }: Di
   // Use directions service
   useEffect(() => {
     if (!directionsService || !routesLibrary || !map) return;
-    
+
     // Create a fresh renderer for each travel mode change
-    const renderer = new routesLibrary.DirectionsRenderer({ 
+    const renderer = new routesLibrary.DirectionsRenderer({
       map,
       suppressMarkers: false,
       draggable: false,
     });
     setDirectionsRenderer(renderer);
-    
+
     // Reset routes and route index when travel mode changes
     setRoutes([]);
     setRouteIndex(0);
     setIsLoading(true);
     setError(null);
-    
+
     directionsService
       .route({
         origin: startPoint,
@@ -124,11 +124,10 @@ const Directions = ({ startPoint, endPoint, travelMode, onTravelModeChange }: Di
             <button
               key={mode.mode}
               onClick={() => onTravelModeChange?.(mode.mode)}
-              className={`px-3 py-2 rounded-md text-xs font-medium transition-colors ${
-                travelMode === mode.mode
+              className={`px-3 py-2 rounded-md text-xs font-medium transition-colors ${travelMode === mode.mode
                   ? 'bg-blue-100 text-blue-700 border border-blue-300'
                   : 'bg-gray-50 text-gray-600 hover:bg-gray-100 border border-gray-200'
-              }`}
+                }`}
               title={mode.label}
             >
               <div className="text-sm">{mode.icon}</div>
@@ -175,11 +174,10 @@ const Directions = ({ startPoint, endPoint, travelMode, onTravelModeChange }: Di
                       <button
                         key={originalIndex}
                         onClick={() => setRouteIndex(originalIndex)}
-                        className={`text-xs px-2 py-1 rounded border w-full text-left ${
-                          originalIndex === routeIndex 
-                            ? 'bg-blue-100 border-blue-300 text-blue-700' 
+                        className={`text-xs px-2 py-1 rounded border w-full text-left ${originalIndex === routeIndex
+                            ? 'bg-blue-100 border-blue-300 text-blue-700'
                             : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                        }`}
+                          }`}
                       >
                         {route.summary}
                       </button>
@@ -198,7 +196,7 @@ const Directions = ({ startPoint, endPoint, travelMode, onTravelModeChange }: Di
   );
 };
 
-const GoogleMaps = ({ startPoint, endPoint, travelMode, apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }: GoogleMapsProps) => {
+const GoogleMaps = ({ startPoint, endPoint, travelMode, apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY }: GoogleMapsProps) => {
   const [center, setCenter] = useState({ lat: 18.524470, lng: 73.878052 }); // Default to Pune 18.524470, 73.878052
   const [currentTravelMode, setCurrentTravelMode] = useState<'DRIVING' | 'WALKING' | 'TRANSIT' | 'BICYCLING'>(travelMode);
 
@@ -211,40 +209,40 @@ const GoogleMaps = ({ startPoint, endPoint, travelMode, apiKey = process.env.NEX
     setCurrentTravelMode(mode);
   };
 
-  
-//   // Calculate center point between start and end
-//   useEffect(() => {
-//     const geocoder = new google.maps.Geocoder();
-    
-//     // Geocode both points to get their coordinates
-//     Promise.all([
-//       new Promise<google.maps.LatLng>((resolve, reject) => {
-//         geocoder.geocode({ address: startPoint }, (results, status) => {
-//           if (status === 'OK' && results?.[0]) {
-//             resolve(results[0].geometry.location);
-//           } else {
-//             reject(status);
-//           }
-//         });
-//       }),
-//       new Promise<google.maps.LatLng>((resolve, reject) => {
-//         geocoder.geocode({ address: endPoint }, (results, status) => {
-//           if (status === 'OK' && results?.[0]) {
-//             resolve(results[0].geometry.location);
-//           } else {
-//             reject(status);
-//           }
-//         });
-//       })
-//     ]).then(([startLatLng, endLatLng]) => {
-//       // Calculate center point
-//       const centerLat = (startLatLng.lat() + endLatLng.lat()) / 2;
-//       const centerLng = (startLatLng.lng() + endLatLng.lng()) / 2;
-//       setCenter({ lat: centerLat, lng: centerLng });
-//     }).catch(error => {
-//       console.error('Error geocoding addresses:', error);
-//     });
-//   }, [startPoint, endPoint]);
+
+  //   // Calculate center point between start and end
+  //   useEffect(() => {
+  //     const geocoder = new google.maps.Geocoder();
+
+  //     // Geocode both points to get their coordinates
+  //     Promise.all([
+  //       new Promise<google.maps.LatLng>((resolve, reject) => {
+  //         geocoder.geocode({ address: startPoint }, (results, status) => {
+  //           if (status === 'OK' && results?.[0]) {
+  //             resolve(results[0].geometry.location);
+  //           } else {
+  //             reject(status);
+  //           }
+  //         });
+  //       }),
+  //       new Promise<google.maps.LatLng>((resolve, reject) => {
+  //         geocoder.geocode({ address: endPoint }, (results, status) => {
+  //           if (status === 'OK' && results?.[0]) {
+  //             resolve(results[0].geometry.location);
+  //           } else {
+  //             reject(status);
+  //           }
+  //         });
+  //       })
+  //     ]).then(([startLatLng, endLatLng]) => {
+  //       // Calculate center point
+  //       const centerLat = (startLatLng.lat() + endLatLng.lat()) / 2;
+  //       const centerLng = (startLatLng.lng() + endLatLng.lng()) / 2;
+  //       setCenter({ lat: centerLat, lng: centerLng });
+  //     }).catch(error => {
+  //       console.error('Error geocoding addresses:', error);
+  //     });
+  //   }, [startPoint, endPoint]);
 
   if (!apiKey) {
     return (

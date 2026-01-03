@@ -1,5 +1,9 @@
 import os
 from typing import Any, Dict, List, Optional
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 from lib.async_ops import AsyncRequests
 
